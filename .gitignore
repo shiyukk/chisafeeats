@@ -1,0 +1,19 @@
+# Build output
+build/
+build-device/
+DerivedData/
+*.xcuserstate
+
+# xcodegen generates these from project.yml
+ChicagoFoodSafetyMap.xcodeproj/
+Info.plist
+
+# SwiftPM
+.swiftpm/
+.build/
+
+# macOS
+.DS_Store
+
+# Local signing config (keeps your Apple Team ID out of the public repo)
+*.local.xcconfig

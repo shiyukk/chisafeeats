@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>detail.violationCount</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@v@</string>
+		<key>v</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>%lld предмета</string>
+			<key>many</key>
+			<string>%lld предметов</string>
+			<key>one</key>
+			<string>%lld предмет</string>
+			<key>other</key>
+			<string>%lld предметов</string>
+		</dict>
+	</dict>
+	<key>time.daysAgo</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@v@</string>
+		<key>v</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>%lld дня назад</string>
+			<key>many</key>
+			<string>%lld дней назад</string>
+			<key>one</key>
+			<string>%lld день назад</string>
+			<key>other</key>
+			<string>%lld дней назад</string>
+		</dict>
+	</dict>
+	<key>time.monthsAgo</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@v@</string>
+		<key>v</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>%lld месяца назад</string>
+			<key>many</key>
+			<string>%lld месяцев назад</string>
+			<key>one</key>
+			<string>%lld месяц назад</string>
+			<key>other</key>
+			<string>%lld месяцев назад</string>
+		</dict>
+	</dict>
+	<key>time.yearsAgo</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@v@</string>
+		<key>v</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>%lld года назад</string>
+			<key>many</key>
+			<string>%lld лет назад</string>
+			<key>one</key>
+			<string>%lld год назад</string>
+			<key>other</key>
+			<string>%lld лет назад</string>
+		</dict>
+	</dict>
+	<key>verdict.found</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@v@, затрагивает:</string>
+		<key>v</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>Найдено %lld проблемы</string>
+			<key>many</key>
+			<string>Найдено %lld проблем</string>
+			<key>one</key>
+			<string>Найдена %lld проблема</string>
+			<key>other</key>
+			<string>Найдено %lld проблемы</string>
+		</dict>
+	</dict>
+	<key>verdict.foundCritical</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@count@ (%#@crit@), затрагивает:</string>
+		<key>count</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>Найдено %lld проблемы</string>
+			<key>many</key>
+			<string>Найдено %lld проблем</string>
+			<key>one</key>
+			<string>Найдена %lld проблема</string>
+			<key>other</key>
+			<string>Найдено %lld проблемы</string>
+		</dict>
+		<key>crit</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>few</key>
+			<string>%lld критические</string>
+			<key>many</key>
+			<string>%lld критических</string>
+			<key>one</key>
+			<string>%lld критическая</string>
+			<key>other</key>
+			<string>%lld критической</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

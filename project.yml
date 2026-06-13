@@ -1,0 +1,56 @@
+name: ChicagoFoodSafetyMap
+options:
+  bundleIdPrefix: com.shiyu
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+
+packages:
+  GRDB:
+    url: https://github.com/groue/GRDB.swift.git
+    from: "7.0.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    # Set your own team in Xcode (Signing & Capabilities) after `xcodegen generate`,
+    # or add `DEVELOPMENT_TEAM = XXXXXXXXXX` to a gitignored *.local.xcconfig.
+    CODE_SIGN_STYLE: Automatic
+
+targets:
+  ChicagoFoodSafetyMap:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+      - path: Resources
+        optional: true
+    dependencies:
+      - package: GRDB
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.shiyu.chisafeeats
+        GENERATE_INFOPLIST_FILE: "NO"
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: "ChiSafeEats"
+        CFBundleShortVersionString: "$(MARKETING_VERSION)"
+        CFBundleVersion: "$(CURRENT_PROJECT_VERSION)"
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        NSLocationWhenInUseUsageDescription: "Used to show food-inspection results for places near you on the map."
+        # Uses only standard HTTPS/system crypto — skips the export-compliance
+        # question on every App Store Connect upload.
+        ITSAppUsesNonExemptEncryption: false
